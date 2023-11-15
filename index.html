@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBlog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="superinfo-bg">
+        <div class="superinfo">
+            <p>Seg / Sex - 07:00 às 17:00</p>
+            <a href="tel:+5527999703158">+55 27 99970-3158</a>
+            <p>R. Rio de Janeiro, 219 - Jardim Limoerio - Serra - ES</p>
+        </div>
+    </div>
+
+    <header class="menu-bg">
+        <section class="menu">
+            <div class="menu-logo">
+                  <img src="./assets/img/logo.jpg" alt="Logo da Alto Estilo Gesso e Decorações">
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#qualidade">Qualidade</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+    <main>
+        <h1 class="introducao">Projetos e Molduras em Geral</h1>
+
+        <section class="sobre" id="sobre">
+            <div class="sobre-info">
+                <h1>Sobre</h1>
+                <p>A mais de 20 anos no mercado a Alto Estilo Gesso e Decorações vem fazendo um trabalho de muita qualidade na grande Vitória e entre outros lugares do Espírito Santo. Empresa especialista na aplicação de gesso para a sua residência ou empresa, com materiais de alta qualidade e atentimento diferenciado.</p>
+            </div>
+            <div class="sobre-img">
+                <img src="./assets/img/fabrica1.jpg" alt="Imagem da fabrica">
+            </div>
+        </section>
+
+        <section class="servicos" id="servicos">
+            <h1>Alguns dos Nossos Serviços</h1>
+        </section>
+
+        <section class="itens" id="preco">
+            <div class="item">
+                <h2>Bandeja de Luz Indireta</h2>
+                <img src="./assets/img/bandeija-de-luz-indireta.jpg" alt="Bandeija de Luz Indireta">
+            </div>
+            
+            <div class="item">
+                <h2>Sanca</h2>
+                <img src="./assets/img/sanca.jpg" alt="Sanca">
+            </div>
+
+            <div class="item">
+                <h2>Roda Teto</h2>
+                <img src="./assets/img/roda-teto.jpg" alt="Roda Teto">
+            </div>
+        </section>
+
+        <section class="qualidade" id="qualidade">
+            <div class="qualidade-item">
+                <h2>Qualidade</h2>
+                <p>A Alto Estilo Gesso e Decorações a mais de 20 anos trazendo um serviço de mais alta qualidade para o seus clientes.</p>
+            </div>
+
+            <div class="qualidade-item">
+                <h2>Atendimento</h2>
+                <p>Nós prezamos sempre por um bom atendimento aos nossos clientes, sempre tiramos as dúvidas e dando as melhores dicas para os seus projetos.</p>
+            </div>
+
+            <div class="qualidade-item">
+                <h2>Confiabilidade</h2>
+                <p>Nós já estamos a um bom tempo no mercado de gesso, entregando uns dos melhores serviços quando se tratra de gesso, e buscamos sempre utilizar os melhores materiais para que possamos garantir a você um trabalho que irá durar bastante tampo.</p>
+            </div>
+        </section>
+
+        <section class="form-wrapper">
+          <h1>Mande um email para nós dizendo o que está procurando</h1>
+
+          <form action="https://api.staticforms.xyz/submit" method="post">
+            <input type="hidden" name="accessKey" value="6bfa94b8-93c3-4dd2-86dc-98b51018f35b">
+            <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/index.html#qualidade">
+            
+            <label for="name">Nome:</label>
+            <input type="text" name="name" placeholder="Seu Nome">
+
+            <label for="email">Email:</label>
+            <input type="text" name="email" placeholder="Seu Email" />
+
+            <textarea name="message"></textarea>
+
+            <input type="submit" value="Enviar" class="submit-button"/>
+        </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>FlexBlog © Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
