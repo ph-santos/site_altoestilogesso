@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FlexBlog</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>AltoEstiloGesso</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -27,12 +28,24 @@
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#servicos">Serviços</a></li>
                     <li><a href="#qualidade">Qualidade</a></li>
+                    <li>
+                        <div>
+                            <input type="checkbox" class="checkbox" id="chk" />
+                            <label class="label" for="chk">
+                              <i class="fas fa-moon"></i>
+                              <i class="fas fa-sun"></i>
+                              <div class="ball"></div>
+                            </label>
+                        </div>
+                    </li>
                 </ul>
             </nav>
+
+            
         </section>
     </header>
 
-    <main>
+    <main class="white" id="main">
         <h1 class="introducao">Projetos e Molduras em Geral</h1>
 
         <section class="sobre" id="sobre">
@@ -96,7 +109,7 @@
             <label for="email">Email:</label>
             <input type="text" name="email" placeholder="Seu Email" />
 
-            <textarea name="message"></textarea>
+            <textarea name="message" placeholder="Digite o email"></textarea>
 
             <input type="submit" value="Enviar" class="submit-button"/>
         </form>
@@ -106,5 +119,8 @@
     <footer class="footer">
         <p>FlexBlog © Todos os direitos reservados.</p>
     </footer>
+
+    <script src="./assets/index.js"></script>
+    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
 </body>
 </html>
