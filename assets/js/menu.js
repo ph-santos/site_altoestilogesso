@@ -15,3 +15,13 @@ function toggleMenu(event) {
 
 btnMobile.addEventListener('click', toggleMenu);
 btnMobile.addEventListener('touchstart', toggleMenu);
+
+function fecharMenu() {
+  const nav = document.getElementById('nav');
+  nav.classList.toggle('active');
+}
+
+const li = document.querySelectorAll('li');
+  li.forEach(li => {
+    li.addEventListener('click', fecharMenu)
+  });
