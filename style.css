@@ -110,7 +110,11 @@ nav a:hover {
 .checkbox {
     opacity: 0;
     position: absolute;
-  }
+}
+
+.dark-theme {
+    margin: 0px 20px 10px 10px;
+}
   
 .label {
     background-color: #111;
@@ -121,7 +125,6 @@ nav a:hover {
     align-items: center;
 
     padding: 5px;
-    margin: 0px 10px 10px;
     position: relative;
     height: 21px;
     width: 44px;
@@ -154,6 +157,112 @@ nav a:hover {
 .fa-sun {
     color: #f39c12;
     font-size: 12px;
+}
+  
+#btn-mobile {
+    display: none;
+    color: white;
+}
+  
+@media (max-width: 610px) {
+    #menu-list {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        top: 207px;
+        right: 0px;
+        background-color: #2c70ff;
+        transition: 0.6s;
+        z-index: 1000;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+    
+    #nav.active #menu-list {
+      height: calc(100vh - 70px);
+      visibility: visible;
+      overflow-y: auto;
+    }
+
+    #menu-list li {
+        width: 100%;
+    }
+    
+    #menu-list a {
+      padding: 1rem 0;
+      margin: 0 1rem;
+      text-align: center;
+      border-bottom: 2px solid #122ab2;
+    }
+
+    .dark-theme-wrapper {
+        order: -1;
+    }
+
+    #menu-list .dark-theme {
+        padding: 1.5rem 0 1.5em 42%;
+        margin: 0 1.5rem;
+        border-bottom: 2px solid #122ab2;
+    }
+    
+    #btn-mobile {
+      display: flex;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border: none;
+      background: none;
+      cursor: pointer;
+      gap: 0.5rem;
+    }
+    
+    #hamburger {
+      border-top: 2px solid;
+      width: 20px;
+    }
+    
+    #hamburger::after,
+    #hamburger::before {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 2px;
+      background: currentColor;
+      margin-top: 5px;
+      transition: 0.3s;
+      position: relative;
+    }
+    
+    #nav.active #hamburger {
+      border-top-color: transparent;
+    }
+    
+    #nav.active #hamburger::before {
+      transform: rotate(135deg);
+    }
+    
+    #nav.active #hamburger::after {
+      transform: rotate(-135deg);
+      top: -7px;
+    }
+}
+
+@media (max-width: 453px) {
+    #menu-list .dark-theme {
+        padding: 1.5rem 0 1.5em 39%;
+        margin: 0 1.5rem;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    }
+}
+
+@media (max-width: 370px) {
+    #menu-list .dark-theme {
+        padding: 1.5rem 0 1.5em 37%;
+        margin: 0 1.5rem;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    }
 }
 
 /* Introdução */
@@ -462,3 +571,44 @@ main.dark .form-wrapper form input[type="submit"] {
     color: #ffffff;
     cursor: pointer;
 }
+
+/*Botão whatssapp*/
+
+.btn-whatssapp {
+    position: fixed;
+    bottom: 10px;
+    right: 14px;
+    z-index: 100;
+}
+
+.btn-whatssapp img {
+    max-width: 65px;
+    transition: transform 0.4s;
+}
+
+.btn-whatssapp img:hover {
+    transform: scale(1.1);
+}
+
+.btn-whatssapp .tooltip-text {
+    visibility: hidden;
+    position: absolute;
+    width: 120px;
+    top: 8px;
+    left: -140px;
+    background-color: #232224;
+    color: #fff;
+    padding: 4px;
+    border-radius: 8px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.btn-whatssapp:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* black-normal: #232224*/
+/*white-normal: #ff*/

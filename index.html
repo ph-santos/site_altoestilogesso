@@ -23,13 +23,16 @@
                   <img src="./assets/img/logo.jpg" alt="Logo da Alto Estilo Gesso e Decorações">
             </div>
 
-            <nav>
-                <ul>
+            <nav id="nav">
+                <button id="btn-mobile">
+                    <span id="hamburger"></span>
+                </button>
+                <ul id="menu-list">
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#servicos">Serviços</a></li>
                     <li><a href="#qualidade">Qualidade</a></li>
-                    <li>
-                        <div>
+                    <li class="dark-theme-wrapper">
+                        <div class="dark-theme">
                             <input type="checkbox" class="checkbox" id="chk" />
                             <label class="label" for="chk">
                               <i class="fas fa-moon"></i>
@@ -51,7 +54,7 @@
         <section class="sobre" id="sobre">
             <div class="sobre-info">
                 <h1>Sobre</h1>
-                <p>A mais de 20 anos no mercado a Alto Estilo Gesso e Decorações vem fazendo um trabalho de muita qualidade na grande Vitória e entre outros lugares do Espírito Santo. Empresa especialista na aplicação de gesso para a sua residência ou empresa, com materiais de alta qualidade e atentimento diferenciado.</p>
+                <p>A mais de 20 anos no mercado a Alto Estilo Gesso & Decorações vem fazendo um trabalho de muita qualidade na grande Vitória e entre outros lugares do Espírito Santo. Empresa especialista na aplicação de gesso para a sua residência ou empresa, com materiais de alta qualidade e atentimento diferenciado.</p>
             </div>
             <div class="sobre-img">
                 <img src="./assets/img/fabrica1.jpg" alt="Imagem da fabrica">
@@ -82,7 +85,7 @@
         <section class="qualidade" id="qualidade">
             <div class="qualidade-item">
                 <h2>Qualidade</h2>
-                <p>A Alto Estilo Gesso e Decorações a mais de 20 anos trazendo um serviço de mais alta qualidade para o seus clientes.</p>
+                <p>A Alto Estilo Gesso & Decorações a mais de 20 anos trazendo um serviço de mais alta qualidade para o seus clientes.</p>
             </div>
 
             <div class="qualidade-item">
@@ -97,17 +100,17 @@
         </section>
 
         <section class="form-wrapper">
-          <h1>Mande um email para nós dizendo o que está procurando</h1>
+          <h1>Se preferir nos mande um email 📧</h1>
 
           <form action="https://api.staticforms.xyz/submit" method="post">
             <input type="hidden" name="accessKey" value="6bfa94b8-93c3-4dd2-86dc-98b51018f35b">
             <input type="hidden" name="redirectTo" value="https://ph-santos.github.io/site_altoestilogesso/">
             
             <label for="name">Nome:</label>
-            <input type="text" name="name" placeholder="Seu Nome">
+            <input type="text" name="name" id="name" placeholder="Seu Nome">
 
             <label for="email">Email:</label>
-            <input type="text" name="email" placeholder="Seu Email" />
+            <input type="text" name="email" id="email" placeholder="Seu Email" />
 
             <textarea name="message" placeholder="Digite o email"></textarea>
 
@@ -117,10 +120,16 @@
     </main>
 
     <footer class="footer">
-        <p>FlexBlog © Todos os direitos reservados.</p>
+        <p>Alto Estilo Gesso & Decorações © Todos os direitos reservados.</p>
     </footer>
 
-    <script src="./assets/index.js"></script>
+    <a href="https://api.whatsapp.com/send?phone=5527996898033&text=Ol%C3%A1,%20tudo%20bem?%20Quero%20fazer%20um%20or%C3%A7amento!" class="btn-whatssapp" target="_blank">
+        <img src="./assets/img/whatssapp.svg" alt="Botão whatssapp">
+        <span class="tooltip-text">Mande uma mensagem</span>
+    </a>
+
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/menu.js"></script>
     <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
 </body>
 </html>
