@@ -1,4 +1,4 @@
-# WildBeast  
+# Alto Estilo Gesso & Decorações  
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/ph-santos/exemplo-readme/blob/main/LICENCE) 
 
 # Sobre o projeto
