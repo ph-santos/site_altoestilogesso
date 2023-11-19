@@ -253,7 +253,7 @@ nav a:hover {
     #menu-list .dark-theme {
         padding: 1.5rem 0 1.5em 39%;
         margin: 0 1.5rem;
-        border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+        border-bottom: 2px solid #122ab2;
     }
 }
 
@@ -261,7 +261,7 @@ nav a:hover {
     #menu-list .dark-theme {
         padding: 1.5rem 0 1.5em 37%;
         margin: 0 1.5rem;
-        border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+        border-bottom: 2px solid #122ab2;
     }
 }
 
