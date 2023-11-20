@@ -8,12 +8,12 @@ Esse projeto consiste em um página feita com HTML, CSS e JavaScript para a visu
 ## Layout mobile
 ![Mobile 1](https://github.com/ph-santos/site_altoestilogesso/blob/main/assets/img/mobile_claro.png)
 ![Mobile 2](https://github.com/ph-santos/site_altoestilogesso/blob/main/assets/img/mobile_escuro.png)
+![Mobile 3](https://github.com/ph-santos/site_altoestilogesso/blob/main/assets/img/menu_mobile.png)
 
 
 ## Layout web
 ![Web 1](https://github.com/ph-santos/site_altoestilogesso/blob/main/assets/img/pc_claro.png)
 ![Web 2](https://github.com/ph-santos/site_altoestilogesso/blob/main/assets/img/pc_escuro.png)
-
 
 
 # Tecnologias utilizadas
